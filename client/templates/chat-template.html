@@ -1,12 +1,17 @@
 <template name="appChat">
  {{#each messages}}
   <div class="alert aler-info">
-   <b>{{name}}</b> : {{text}} <button class="btn btn-danger btn-small btnDelete">&times;</button>
+   {{Name}}<br> 
+   {{Age}}<br>
+   {{Gender}}<br>
+   {{Address}}<br> <button class="btn btn-danger btn-small btnDelete">&times;</button>
   	
   </div>
   {{/each}}
   <form class="form">
-  	<input type="text" class="form-control txtName" placeholder="Username"/>
-  	<input type="text" class="form-control txtText" placeholder="Type a Message"/>
+  	<input type="text" class="form-control txtName" placeholder="Enter Name"/>
+  	<input type="text" class="form-control txtAge" placeholder="Enter Age"/>
+  	<input type="text" class="form-control txtGender" placeholder="Enter Gender"/>
+  	<input type="text" class="form-control txtAddress" placeholder="Enter Address"/>
   </form>
 </template>
